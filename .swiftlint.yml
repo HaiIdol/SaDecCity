@@ -1,0 +1,50 @@
+disabled_rules:
+- trailing_whitespace
+- comment_spacing
+- identifier_name
+- force_try
+- mark
+- force_cast
+- empty_string
+- switch_case_alignment
+- legacy_constructor
+- type_name
+
+opt_in_rules:
+- empty_count
+- empty_string
+
+excluded:
+- Carthage
+- Pods
+- SwiftLint/Common/3rdPartyLib
+
+line_length:
+    warning: 1500
+    error: 1501
+    ignores_function_declarations: true
+    ignores_comments: true
+    ignores_urls: true
+
+function_body_length:
+    warning: 300
+    error: 500
+
+function_parameter_count:
+    warning: 20
+    error: 21
+
+type_body_length:
+    warning: 1000
+    error: 1001
+
+file_length:
+    warning: 1000
+    error: 1500
+    ignore_comment_only_lines: true
+
+cyclomatic_complexity:
+    warning: 70
+    error: 71
+
+reporter: "xcode"
